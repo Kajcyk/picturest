@@ -12,11 +12,11 @@
 
       <div class="form-group">
         <%= f.label :image, 'Plik zdjęcia' %>
-        <%= f.text_field :image, class: 'form-control', placeholder: 'Dodaj plik' %>
+        <%= f.file_field :image %>
       </div>
 
       <div class="actions"></div>
-      <%= f.submit 'Zapisz zdjęcie', class: 'btn btn-primary'%>
+        <%= f.submit 'Zapisz zdjęcie', class: 'btn btn-primary'%>
       </div>
 
     <% end %>
